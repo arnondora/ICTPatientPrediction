@@ -1,3 +1,4 @@
 .DS_Stare
 /data/*
 .idea/*
+__pycache__
