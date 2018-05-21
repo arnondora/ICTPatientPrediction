@@ -30,3 +30,6 @@ def impute_icu_dischage_status (dataset) :
     # Impute all record with icu_discharge_status from 2 (HAMA) to 1 (Death)
     dataset.icu_discharge_status = dataset.icu_discharge_status.replace(2,1)
     return dataset
+
+def impute_boolean (dataset) :
+    return dataset.replace({'No':False, 'Yes':True})
